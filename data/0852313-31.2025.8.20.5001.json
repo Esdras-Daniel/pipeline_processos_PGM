@@ -110,9 +110,9 @@
       "data_analise": "2025-07-16",
       "versao_analise": "1.0",
       "analista_responsavel": "ia_gemini",
-      "tempo_processamento": "string",
-      "llm_tokens": "string",
-      "custo_estimado": "string"
+      "tempo_processamento": "109.50 segundos",
+      "llm_tokens": "71490",
+      "custo_estimado": "prompt_token_count: 60123\ncandidates_token_count: 7711\ntotal_token_count: 71490\ncached_content_token_count: 57260\n"
     },
     "identificacao_processual": {
       "processo": "0852313-31.2025.8.20.5001",
@@ -156,7 +156,7 @@
           "fonte_documento": "Id. 156299197 - Ficha Funcional; Id. 156299199 - Processo Administrativo.",
           "relevancia_juridica": "essencial",
           "impacto_caso": "positivo",
-          "observacoes": "Define o marco inicial máximo de qualquer direito pleiteado, contradizendo a petição inicial."
+          "observacoes": "Define o marco inicial máximo de qualquer direito pleiteado, contradizendo a petição inicial que cobra valores desde 2020."
         },
         {
           "data": "14/11/2024",
@@ -193,9 +193,9 @@
       ],
       "fatos_incontroversos": [
         {
-          "fato": "O autor é servidor público efetivo do Município de Natal, no cargo de Técnico em Enfermagem.",
+          "fato": "O autor é servidor público efetivo do Município de Natal, no cargo de Técnico em Enfermagem, desde 13/08/2024.",
           "fundamento": "Id. 156299197 - Ficha Funcional.",
-          "implicacao_juridica": "Confirma a legitimidade ativa e o regime jurídico aplicável (LC 119/2010)."
+          "implicacao_juridica": "Confirma a legitimidade ativa, o regime jurídico aplicável (LC 119/2010) e o marco inicial do vínculo."
         },
         {
           "fato": "O autor está lotado no Hospital dos Pescadores (HOSPESC).",
@@ -212,7 +212,7 @@
         {
           "fato": "Termo inicial para o pagamento do adicional de insalubridade.",
           "posicao_municipio": "Deve ser a data do laudo que constatou a insalubridade (19/05/2025) ou, subsidiariamente, a data do requerimento administrativo (14/11/2024).",
-          "posicao_adversa": "Pleiteia desde agosto de 2020, mas o correto, segundo sua tese, seria desde a posse (agosto de 2024).",
+          "posicao_adversa": "Pleiteia desde agosto de 2020, o que é faticamente impossível, pois o vínculo iniciou em agosto de 2024.",
           "onus_probatorio": "compartilhado",
           "dificuldade_comprovacao": "baixa",
           "como_impugnar": "Juntar ficha funcional e portaria de nomeação que comprovam a data de posse em agosto de 2024, demonstrando a impossibilidade fática e jurídica da cobrança anterior a este marco."
@@ -220,18 +220,10 @@
         {
           "fato": "Valor total da condenação retroativa.",
           "posicao_municipio": "O valor é significativamente inferior ao pleiteado, devendo ser recalculado com base no termo inicial correto e na base de cálculo prevista na LC 119/2010.",
-          "posicao_adversa": "Apresenta planilha de cálculo no valor de R$ 13.726,00, baseada em período incorreto.",
+          "posicao_adversa": "Apresenta planilha de cálculo no valor de R$ 13.726,00, baseada em período incorreto (desde 2020) e percentual equivocado (menciona 40%).",
           "onus_probatorio": "municipio",
           "dificuldade_comprovacao": "baixa",
           "como_impugnar": "Apresentar impugnação específica da planilha de cálculos e juntar uma nova planilha elaborada pela contadoria da PGM, com os valores corretos."
-        },
-        {
-          "fato": "Necessidade de nova perícia judicial.",
-          "posicao_municipio": "Pode-se argumentar pela necessidade, mas é uma tese frágil, pois o laudo existente foi produzido por órgão técnico do próprio Município.",
-          "posicao_adversa": "Desnecessária, pois o laudo administrativo já comprova a condição insalubre.",
-          "onus_probatorio": "adversario",
-          "dificuldade_comprovacao": "alta",
-          "como_impugnar": "Focar a defesa em outros pontos, pois insistir na desqualificação do próprio laudo administrativo pode ser contraproducente."
         }
       ],
       "questoes_preliminares": [
@@ -242,7 +234,7 @@
         },
         {
           "questao": "Impugnação ao Valor da Causa",
-          "posicionamento_sugerido": "Apresentar impugnação ao valor da causa, que foi calculado com base em período e valores incorretos.",
+          "posicionamento_sugerido": "Apresentar impugnação ao valor da causa, que foi calculado com base em período e valores manifestamente incorretos.",
           "fundamentacao": "Art. 292 e 293 do CPC. O valor da causa deve corresponder ao real proveito econômico pretendido, que, no caso, é drasticamente inferior ao indicado."
         }
       ]
@@ -300,7 +292,8 @@
           "tese": "O direito ao adicional nasce com o exercício da atividade em condições insalubres, tendo o laudo natureza meramente declaratória. Portanto, o pagamento é devido desde a posse.",
           "contra_argumentacao": "A eficácia financeira de vantagens de servidor público depende de prévio reconhecimento formal pela Administração, conforme §1º do art. 5º da LC 119/2010, que exige apuração em vistoria e laudo. O pagamento retroativo automático e irrestrito violaria a Lei de Responsabilidade Fiscal e o controle de despesas.",
           "vulnerabilidades_identificadas": [
-            "Ignora a necessidade de formalização do ato administrativo para gerar efeitos financeiros."
+            "Ignora a necessidade de formalização do ato administrativo para gerar efeitos financeiros.",
+            "A planilha de cálculo apresentada é grosseiramente falha, pedindo valores desde 2020 para um vínculo iniciado em 2024, o que mina a credibilidade da postulação."
           ],
           "precedentes_desfavoraveis": [
             "Verificar julgados que condicionam o pagamento à data do requerimento ou do laudo."
@@ -310,7 +303,7 @@
           "tese": "A mora da Administração (atraso superior a 7 meses na análise) justifica o ajuizamento da ação e a condenação.",
           "contra_argumentacao": "A mora administrativa, embora existente, não tem o condão de alterar o termo inicial do direito, apenas legitima o interesse de agir. A defesa do Município não deve negar a mora, mas sim delimitar suas consequências jurídicas.",
           "vulnerabilidades_identificadas": [
-            "Nenhuma, esta tese é forte e provavelmente será acolhida."
+            "Nenhuma, esta tese é forte e provavelmente será acolhida para justificar o interesse de agir."
           ],
           "precedentes_desfavoraveis": [
             "A jurisprudência é pacífica quanto à caracterização do interesse de agir pela mora administrativa (violação à duração razoável do processo)."
@@ -333,7 +326,7 @@
           "favorabilidade_municipio": "muito_desfavoravel"
         },
         {
-          "dispositivo": "Constituição Federal, Art. 37, caput e § 6º",
+          "dispositivo": "Constituição Federal, Art. 37, caput",
           "texto_relevante": "Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência...",
           "interpretacao": "O princípio da legalidade impede o pagamento por período não trabalhado. O princípio da eficiência foi violado pela mora administrativa.",
           "favorabilidade_municipio": "favoravel"

@@ -380,15 +380,17 @@ def processar_arquivo(caminho_arquivo:pathlib.Path, model: GenerativeModel):
     try:
         firac_json = json.loads(firac_output)
     except json.JSONDecodeError:
-        print(f'Erro ao interpretar JSON retornado para {caminho_arquivo.name}:')
+        print(f'Erro ao interpretar JSON retornado para {caminho_arquivo.name}')
         print(firac_output)
         return
     
     # Adiciona metadados de uso ao JSON
     usage = response.usage_metadata
+    print(firac_json)
     if usage:
         firac_json['metadados']['tempo_processamento'] = f"{fim - inicio:.2f} segundos"
-        firac_json['metadados']['llm_tokens'] = str(usage.total_tokens)
+        #firac_json['metadados']['proomt_token_count'] = str(usage.promt_token_count)
+        firac_json['metadados']['llm_tokens'] = str(usage.total_token_count)
         firac_json['metadados']['custo_estimado'] = str(usage)
 
     processo[CAMPO_FIRAC] = firac_json
@@ -404,7 +406,7 @@ if __name__ == '__main__':
                                    generation_config={
                                        'response_mime_type':'application/json',
                                        'temperature':0.1,
-                                       'max_output_tokens':8192
+                                       'max_output_tokens':16384
                                    })
 
     arquivos = list(DIRETORIO_PROCESSOS.glob("*.json"))
